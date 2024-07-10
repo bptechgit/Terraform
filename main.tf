@@ -88,7 +88,7 @@ resource "aws_instance" "ec2_inst" {
 }
 
 
-# Create RSA key 
+# RSA key 
 resource "tls_private_key" "rsa" {
   algorithm = "RSA"
   rsa_bits  = 4096
