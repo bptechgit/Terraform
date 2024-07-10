@@ -94,8 +94,8 @@ resource "tls_private_key" "rsa" {
   rsa_bits  = 4096
 }
 
-# Create Key Pair 
-resource "aws_key_pair" "aws_key" {
+# Create aws Key Pair 
+resource "aws_key_pair" "key" {
   key_name   = "aws_key"
   public_key = tls_private_key.rsa.public_key_openssh
 }
